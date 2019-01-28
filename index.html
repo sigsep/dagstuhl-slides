@@ -113,18 +113,6 @@
 
 	<section>
 		<h1>Separation with <font color="black">hand-crafted</font> models</h1>
-		<h2>Redundancy for the accompaniment: NMF</h2>
-		<img style="float:right" width="41%" src="assets/model_based/ReviewPaper_ Figure3.svg" alt="">
-		<ul>
-			<li>Spectral templates</li>
-			<li>Low-rank assumptions</li>
-			<li>Bad generalization</li>
-		</ul>
-		<!-- an example -->
-	</section>
-
-	<section>
-		<h1>Separation with <font color="black">hand-crafted</font> models</h1>
 		<h2>Redundancy for the accompaniment: RPCA</h2>
 		<p>
 		<img style="margin-top:4%;" width="90%" src="assets/model_based/ReviewPaper_ Figure4.svg" alt=""><p>
@@ -158,27 +146,6 @@
 		</ul>
 	</section>
 
-	<section>
-		<h1>Separation with <font color="black">hand-crafted</font> models</h1>
-		<img style="float:right" width="45%" src="assets/model_based/ReviewPaper_ Figure8.svg" alt="">
-		<h2>Cascaded methods</h2>
-		<ul>
-			<li>Combining methods</li>
-			<li>Handcrafted systems</li>
-			<li>Poor generalization</li>
-		</ul>
-	</section>
-
-	<section>
-		<h1>Separation with <font color="black">hand-crafted</font> models</h1>
-		<h2>Fusion of methods</h2>
-		<img style="float:right" width="49%" src="assets/model_based/ReviewPaper_ Figure9.svg" alt="">
-		<ul>
-			<li>Combining in a data-driven way</li>
-			<li>Doing best than all</li>
-			<li>Computationally demanding</li>
-		</ul>
-	</section>
 </section>
 
 
@@ -206,7 +173,7 @@
 		<img width="100%" src="assets/generative-discriminative.svg" alt="">
 	</section>
 
-	<section>
+	<!-- <section>
 		<h1>Music separation as a machine learning problem</h1>
 		<h2>Classification ...</h2>
 			<img width="66%" src="assets/binarymasking.svg" alt="">
@@ -246,16 +213,12 @@
 			<li>Very long-term dependencies !</li>
 			<li>LSTM, CNN, etc</li>
 		</ul>
-	</section>
+	</section> -->
 
 	<section>
-		<h1>A baseline DNN for separation</h1>
+		<h1>Music separation as a machine learning problem</h1>
+		<h2>A baseline discriminative deep model</h2>
 		<img width="100%" style="float:center" src="assets/vanilla_lstm_test.svg" alt="">
-	</section>
-
-	<section>
-		<h1>Typical performance today</h1>
-		<iframe class="stretch" data-src="audio/player_OSU2.html"></iframe>
 	</section>
 
 </section>
@@ -283,48 +246,92 @@
 			<li> 2015: very challenging edition (from overfitted 3mn to larger scale 3.5h of test data)</li>
 			<li> 2016-2018: steady and systematic improvement</li>
 		</ul>
-
 	</section>
 
 	<section data-state="no-title-footer" data-background="#232323">
 		<h1 style='color:white; font-size: 2.4em; margin-top: 3em; margin-left: 1em'>
-			Is music separation </br>solved?
+			Is voice separation </br>solved?
+			</br><i class="fa fa-volume-up"></i><a href="https://sisec18.unmix.app"> sisec18.unmix.app</a>
 		</h1>
 	</section>
 
-	<section data-state="no-title-footer" data-background="darkred">
-		<h1 style='color:white; font-size: 3.4em; margin-top: 2em;  margin-left: 1em'>Lets find out</br><i class="fa fa-volume-up"></i><a href="https://sisec18.unmix.app"> sisec18.unmix.app</a></h1>
+	<section>
+		<h1>MUSDB18 Test Data</h1>
+		<iframe class="stretch" data-src="audio/player_OSU2.html"></iframe>
 	</section>
+
+	<section>
+		<h1>Noir Désir: Fin de Siècle</h1>
+		<iframe class="stretch" data-src="audio/player_noirdesir.html"></iframe>
+	</section>
+
+	<section>
+		<h1>Eminem: Without Me</h1>
+		<iframe class="stretch" data-src="audio/player_eminem.html"></iframe>
+	</section>
+
+	<section>
+		<h1>Dylan: Like a Rolling Stone</h1>
+		<iframe class="stretch" data-src="audio/player_dylan.html"></iframe>
+	</section>
+
+	<section>
+		<h1>Avicii: Lonely Together</h1>
+		<iframe class="stretch" data-src="audio/player_avicii.html"></iframe>
+	</section>
+
 
 </section>
 
+<section>
 	<section>
 		<h1>Conclusion and discussion</h1>
+		<h2 class="fragment">Vocals separation is now a technology</h2>
 		<div class="fragment">
-			<h1>Perspectives on source separation</h1>
+			<h2>Research perspectives on voice separation</h2>
 			<ul>
-				<li>Blind evaluation and unsupurvised training</li>
-				<li>Learning with limited amount of data</li>
+				<li>Current evaluation: ceiling reached
+				</br>$\Rightarrow$ Blind evaluation ?</li>
+				<li>Performance related to datasets size
+				</br>$\Rightarrow$ Learning with limited amount of data, evaluating vs data-size?
+				</br>$\Rightarrow$ Unsupervised training?</li>
+			</ul>
+			<h2>Research questions on mixture processing</h2>
+			<ul>
 				<li>Model long term dependency</li>
-				<li>Representation learning for sound and music</li>
+				<li>Generative models
+					</br>$\Rightarrow$ Directly generate mixtures?
+					</br>$\Rightarrow$ Hierarchical models? First generate stems?
+					</br>$\Rightarrow$ How to evaluate?
+				</li>
+				<li>Representation learning
+				</br>$\Rightarrow$ Analysis/synthesis frameworks, disentangled representations?</li>
 				<li>Exploiting knowledge domain, user interaction</li>
 			</ul>
 		</div>
 		<div class="fragment">
-			<h1>Items for discussion</h1>
+		</section>
+		<section>
+			<h2>Provocative items for discussion</h2>
 			<ul>
 				<li>Models strongly outperformed. Are they still useful ?</li>
-				<li>Unbalanced data availability: academia (150 songs) vs industry ($\approx 20000$ songs)</li>
-				<li>Audio lagging behind in ML research vs Image</li>
+				<li>Future use-cases: musical practice vs listening practice
+					</br>$\Rightarrow$  Musical practice: automatic arrangement, FX, accompaniment?
+					</br>$\Rightarrow$  Listening practice: automatic generation (end of royalties?)</li>
+				<li>Unbalanced data availability: academia ($150$ songs) vs industry ($\approx 20000$ songs)</li>
+				<li>Audio lagging behind in ML research vs Image
+				</br>$\Rightarrow$ Displaying images of celebrities vs displaying generated sounds?</li>
 			</ul>
+
 			<p>
-			<h1>Resources</h1>
+			<h2>Resources</h2>
 			<ul>
 				<li>References and Software tools: <a href="https://sigsep.github.io">sigsep.github.io</a></li>
 				<li>SiSEC 2018 Website: <a href="https://sisec18.unmix.app">sisec18.unmix.app</a></li>
 			</ul>
 		</div>
 	</section>
+</section>
 
 			</div>
 			<div class='footer'>
